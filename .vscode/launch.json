@@ -8,6 +8,8 @@
       "url": "http://localhost:3000",
       "webRoot": "${workspaceFolder}",
       "preLaunchTask": "npm: dev",
+      "sourceMaps": true,
+      "resolveSourceMapLocations": ["${workspaceFolder}/.next/static/chunks"],
       "runtimeArgs": [
         "--auto-open-devtools-for-tabs",
         "--user-data-dir=${userHome}/.config/google-chrome-vscode"
