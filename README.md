@@ -1,36 +1,32 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Next.js 15 Starter
 
-## Getting Started
+This starter repository facilitates the creation of new Next.js projects using the configuration described below.  
+To learn how to use a GitHub template repository, check out [Creating a repository from a template](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template).
 
-First, run the development server:
+![project status](https://img.shields.io/badge/status-work%20in%20progress-red?style=for-the-badge)
+![live demo](https://img.shields.io/badge/live_demo-blue?style=for-the-badge)
+![Lighthouse report](https://img.shields.io/badge/lighthouse-%23F44B21?style=for-the-badge&logo=lighthouse&logoColor=fff)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Tech Stack
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Frontend
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Framework**: [Next.js](https://nextjs.org/)
+- **UI Library**: [Radix UI](https://www.radix-ui.com/)
+- **Style**: [Tailwind CSS](https://tailwindcss.com/)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Backend
 
-## Learn More
+- **CDN**: Static assets served from [Vercel Edge Network](https://vercel.com/docs/edge-network/overview).
 
-To learn more about Next.js, take a look at the following resources:
+## Dev Environment & Tools
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- System: [Ubuntu](https://ubuntu.com/desktop)
+- Editor: [VS Code](https://code.visualstudio.com/)
+- Formatter: [Prettier](https://prettier.io/)
+- Linter: [ESLint](https://eslint.org/)
+- AI assistant: [GitHub Copilot](https://github.com/features/copilot)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Copyright
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+© 2024 Johnny Gérard
