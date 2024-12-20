@@ -1,15 +1,4 @@
 {
-  "name": "starter-nextjs-15",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "next build",
-    "format": "prettier --write .",
-    "format:check": "prettier --check .",
-    "start": "next start",
-    "lint": "next lint"
-  },
   "dependencies": {
     "next": "15.1.2",
     "react": "^19.0.0",
@@ -27,5 +16,16 @@
     "prettier-plugin-tailwindcss": "0.6.9",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
-  }
+  },
+  "name": "starter-nextjs-15",
+  "private": true,
+  "scripts": {
+    "build": "next build",
+    "dev": "next dev --turbopack",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "lint": "next lint",
+    "start": "next start"
+  },
+  "version": "0.1.0"
 }
