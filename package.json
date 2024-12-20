@@ -26,6 +26,5 @@
     "format:check": "prettier --check .",
     "lint": "next lint",
     "start": "next start"
-  },
-  "version": "0.1.0"
+  }
 }
