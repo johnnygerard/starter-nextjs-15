@@ -1,3 +1,4 @@
+import { clsx } from "clsx";
 import type { Metadata } from "next";
 import { Geist } from "next/font/google";
 import "./globals.css";
@@ -42,7 +43,7 @@ type Props = Readonly<{
 const RootLayout = ({ children }: Props) => {
   return (
     <html
-      className={`${geistSans.variable} font-sans antialiased`}
+      className={clsx(geistSans.variable, "font-sans antialiased")}
       lang="en-US"
     >
       <body>
