@@ -1,6 +1,12 @@
+import { Metadata } from "next";
 import Link from "next/link";
+import { memo } from "react";
 
-export default function NotFound() {
+export const metadata: Metadata = {
+  title: "404 Not Found",
+};
+
+const NotFound = () => {
   return (
     <div>
       <h1>404 Not Found</h1>
@@ -8,4 +14,6 @@ export default function NotFound() {
       <Link href="/">Back to Home</Link>
     </div>
   );
-}
+};
+
+export default memo(NotFound);

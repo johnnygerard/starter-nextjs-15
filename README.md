@@ -34,4 +34,4 @@ To learn how to use a GitHub template repository, check out [Creating a reposito
 
 ## Copyright
 
-© 2024 Johnny Gérard
+© 2025 Johnny Gérard

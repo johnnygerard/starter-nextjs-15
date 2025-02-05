@@ -1,6 +1,8 @@
+import { clsx } from "clsx";
 import type { Metadata } from "next";
 import { Geist } from "next/font/google";
 import "./globals.css";
+import { memo, ReactNode } from "react";
 
 const geistSans = Geist({
   display: "swap",
@@ -8,11 +10,14 @@ const geistSans = Geist({
   variable: "--font-geist-sans",
 });
 
-const TITLE = "placeholder";
+const APP_NAME = "placeholder";
 const DESCRIPTION = "placeholder";
 
 export const metadata: Metadata = {
-  title: TITLE,
+  title: {
+    template: `%s | ${APP_NAME}`,
+    default: APP_NAME,
+  },
   description: DESCRIPTION,
   icons: [
     {
@@ -25,20 +30,20 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://example.com/placeholder",
-    siteName: "placeholder",
-    title: TITLE,
+    siteName: APP_NAME,
+    title: APP_NAME,
     description: DESCRIPTION,
   },
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+type Props = Readonly<{
+  children: ReactNode;
+}>;
+
+const RootLayout = ({ children }: Props) => {
   return (
     <html
-      className={`${geistSans.variable} font-sans antialiased`}
+      className={clsx(geistSans.variable, "font-sans antialiased")}
       lang="en-US"
     >
       <body>
@@ -80,4 +85,6 @@ export default function RootLayout({
       </body>
     </html>
   );
-}
+};
+
+export default memo(RootLayout);
