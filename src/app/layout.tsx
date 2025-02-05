@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist } from "next/font/google";
 import "./globals.css";
+import { memo, ReactNode } from "react";
 
 const geistSans = Geist({
   display: "swap",
@@ -31,11 +32,11 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+type Props = Readonly<{
+  children: ReactNode;
+}>;
+
+const RootLayout = ({ children }: Props) => {
   return (
     <html
       className={`${geistSans.variable} font-sans antialiased`}
@@ -80,4 +81,6 @@ export default function RootLayout({
       </body>
     </html>
   );
-}
+};
+
+export default memo(RootLayout);
