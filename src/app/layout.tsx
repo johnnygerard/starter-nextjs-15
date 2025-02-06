@@ -47,9 +47,7 @@ const RootLayout = ({ children }: Props) => {
       lang="en-US"
     >
       <body>
-        <div className="grid min-h-screen place-items-center" role="main">
-          {children}
-        </div>
+        <div className="grid min-h-screen place-items-center">{children}</div>
         <noscript>
           <div
             style={{
