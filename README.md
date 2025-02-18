@@ -24,6 +24,16 @@ To learn how to use a GitHub template repository, check out [Creating a reposito
 - [Jest](https://jestjs.io/)
 - [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
 
+## How to Update
+
+To check for outdated packages, run `npm outdated`.
+
+```bash
+# Update dependencies (this will rewrite package-lock.json and package.json)
+npm update --save
+npm install --save-exact --save-dev prettier@latest prettier-plugin-tailwindcss@latest
+```
+
 ## Dev Environment & Tools
 
 - System: [Ubuntu](https://ubuntu.com/desktop)
