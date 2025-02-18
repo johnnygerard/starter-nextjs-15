@@ -31,4 +31,20 @@
   --font-sans: var(--font-geist-sans);
 
   --spacing: 0.25rem;
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+  }
+  --animate-fade-in: fadeIn var(--default-transition-duration)
+    var(--default-transition-timing-function);
+
+  @keyframes focusRing {
+    from {
+      outline-color: transparent;
+    }
+  }
+  --animate-focus-ring: focusRing var(--default-transition-duration)
+    var(--default-transition-timing-function);
 }
