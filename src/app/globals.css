@@ -23,4 +23,6 @@
   --breakpoint-dt: 90em; /* Desktop: 1440px */
 
   --font-sans: var(--font-geist-sans);
+
+  --spacing: 0.25rem;
 }
