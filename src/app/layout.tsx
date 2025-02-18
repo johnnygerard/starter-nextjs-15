@@ -14,6 +14,7 @@ const APP_NAME = "placeholder";
 const DESCRIPTION = "placeholder";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://example.com/placeholder"),
   title: {
     template: `%s | ${APP_NAME}`,
     default: APP_NAME,
@@ -24,21 +25,21 @@ export const metadata: Metadata = {
       rel: "icon",
       sizes: "32x32",
       type: "image/png",
-      url: "/images/favicon-32x32.png",
+      url: "/image/favicon.png",
     },
   ],
   openGraph: {
     type: "website",
-    url: "https://example.com/placeholder",
+    url: "/",
     siteName: APP_NAME,
     title: APP_NAME,
     description: DESCRIPTION,
   },
 };
 
-type Props = Readonly<{
+type Props = {
   children: ReactNode;
-}>;
+};
 
 const RootLayout = ({ children }: Props) => {
   return (
@@ -61,6 +62,7 @@ const RootLayout = ({ children }: Props) => {
               color: "#d32f2f",
               borderBottom: "2px solid currentColor",
               textAlign: "center",
+              lineHeight: 1.5,
             }}
             role="alert"
           >
