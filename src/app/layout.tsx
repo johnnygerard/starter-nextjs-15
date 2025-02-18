@@ -37,9 +37,9 @@ export const metadata: Metadata = {
   },
 };
 
-type Props = Readonly<{
+type Props = {
   children: ReactNode;
-}>;
+};
 
 const RootLayout = ({ children }: Props) => {
   return (
