@@ -14,6 +14,7 @@ const APP_NAME = "placeholder";
 const DESCRIPTION = "placeholder";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://example.com/placeholder"),
   title: {
     template: `%s | ${APP_NAME}`,
     default: APP_NAME,
@@ -29,7 +30,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     type: "website",
-    url: "https://example.com/placeholder",
+    url: "/",
     siteName: APP_NAME,
     title: APP_NAME,
     description: DESCRIPTION,
