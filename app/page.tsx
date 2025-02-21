@@ -1,4 +1,4 @@
-import Deployment from "@/component/deployment";
+import Deployment from "@/_component/deployment";
 import { memo } from "react";
 
 const HomePage = () => {
