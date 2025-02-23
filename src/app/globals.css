@@ -24,6 +24,7 @@
   }
 }
 
+/*noinspection CssUnresolvedCustomProperty*/
 @theme {
   --breakpoint-tb: 48em; /* Tablet: 768px */
   --breakpoint-dt: 90em; /* Desktop: 1440px */
