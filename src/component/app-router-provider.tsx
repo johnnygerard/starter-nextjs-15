@@ -15,9 +15,9 @@ declare module "react-aria-components" {
   }
 }
 
-type Props = Readonly<{
+type Props = {
   children: ReactNode;
-}>;
+};
 
 const AppRouterProvider = ({ children }: Props) => {
   const router = useRouter();
