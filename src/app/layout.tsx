@@ -1,4 +1,6 @@
-import { clsx } from "clsx";
+import AppRouterProvider from "@/component/app-router-provider";
+import Noscript from "@/component/noscript";
+import { cn } from "@/util/cn";
 import type { Metadata } from "next";
 import { Geist } from "next/font/google";
 import "./globals.css";
@@ -25,7 +27,7 @@ export const metadata: Metadata = {
       rel: "icon",
       sizes: "32x32",
       type: "image/png",
-      url: "/image/favicon.png",
+      url: "/asset/image/favicon.png",
     },
   ],
   openGraph: {
@@ -44,44 +46,12 @@ type Props = {
 const RootLayout = ({ children }: Props) => {
   return (
     <html
-      className={clsx(geistSans.variable, "font-sans antialiased")}
+      className={cn(geistSans.variable, "font-sans antialiased")}
       lang="en-US"
     >
       <body>
-        {children}
-        <noscript>
-          <div
-            style={{
-              position: "fixed",
-              zIndex: 1000,
-              top: 0,
-              left: 0,
-              right: 0,
-              padding: "1rem",
-              backgroundColor: "#fff4f4",
-              color: "#d32f2f",
-              borderBottom: "2px solid currentColor",
-              textAlign: "center",
-              lineHeight: 1.5,
-            }}
-            role="alert"
-          >
-            <p>
-              JavaScript is required for this website to function properly.
-              Please ensure that it is supported and enabled in your browser
-              settings.
-              <br />
-              To learn more, check out{" "}
-              <a
-                style={{ textDecorationLine: "underline", color: "LinkText" }}
-                href="https://enable-javascript.com/"
-              >
-                How to enable JavaScript in your browser
-              </a>
-              .
-            </p>
-          </div>
-        </noscript>
+        <AppRouterProvider>{children}</AppRouterProvider>
+        <Noscript />
       </body>
     </html>
   );
