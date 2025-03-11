@@ -1,5 +1,5 @@
-import AppRouterProvider from "@/component/app-router-provider";
-import Noscript from "@/component/noscript";
+import { AppRouterProvider } from "@/component/app-router-provider";
+import { Noscript } from "@/component/noscript";
 import { cn } from "@/util/cn";
 import type { Metadata } from "next";
 import { Geist } from "next/font/google";
