@@ -4,13 +4,6 @@
   button:enabled {
     cursor: pointer;
   }
-
-  a,
-  button:enabled,
-  input {
-    /* `outline` is set to `none` to avoid conflicts with React Aria focus ring */
-    outline: none;
-  }
 }
 
 /* Disable all animations when user prefers reduced motion */
@@ -39,13 +32,5 @@
     }
   }
   --animate-fade-in: fadeIn var(--default-transition-duration)
-    var(--default-transition-timing-function);
-
-  @keyframes focusRing {
-    from {
-      outline-color: transparent;
-    }
-  }
-  --animate-focus-ring: focusRing var(--default-transition-duration)
     var(--default-transition-timing-function);
 }

@@ -1,5 +1,5 @@
-import { AppLink } from "@/component/app-link";
 import { Metadata } from "next";
+import Link from "next/link";
 import { memo } from "react";
 
 export const metadata: Metadata = {
@@ -12,7 +12,7 @@ const NotFound = () => {
       <div className="text-center">
         <h1>404 Not Found</h1>
         <p>Sorry, the page you are looking for does not exist.</p>
-        <AppLink href="/">Back to Home</AppLink>
+        <Link href="/">Back to Home</Link>
       </div>
     </div>
   );
