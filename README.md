@@ -12,7 +12,6 @@ To learn how to use a GitHub template repository, check out [Creating a reposito
 ### Frontend
 
 - **React Framework**: [Next.js 15](https://nextjs.org/)
-- **Headless UI Library**: [React Aria](https://react-spectrum.adobe.com/react-aria/index.html)
 - **Style**: [Tailwind CSS 4](https://tailwindcss.com/)
 
 ### Backend
