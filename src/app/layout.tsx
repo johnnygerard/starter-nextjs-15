@@ -1,4 +1,3 @@
-import { AppRouterProvider } from "@/component/app-router-provider";
 import { Noscript } from "@/component/noscript";
 import { cn } from "@/util/cn";
 import type { Metadata } from "next";
@@ -50,7 +49,7 @@ const RootLayout = ({ children }: Props) => {
       lang="en-US"
     >
       <body>
-        <AppRouterProvider>{children}</AppRouterProvider>
+        {children}
         <Noscript />
       </body>
     </html>
