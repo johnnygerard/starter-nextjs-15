@@ -11,29 +11,22 @@ const geistSans = Geist({
   variable: "--font-geist-sans",
 });
 
-const APP_NAME = "placeholder";
-const DESCRIPTION = "placeholder";
+const APP_NAME = "appName";
+const TITLE = "title";
+const DESCRIPTION = "description";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://example.com/placeholder"),
+  metadataBase: new URL("https://placeholder.example.com"),
   title: {
     template: `%s | ${APP_NAME}`,
-    default: APP_NAME,
+    default: TITLE,
   },
   description: DESCRIPTION,
-  icons: [
-    {
-      rel: "icon",
-      sizes: "32x32",
-      type: "image/png",
-      url: "/asset/image/favicon.png",
-    },
-  ],
   openGraph: {
     type: "website",
     url: "/",
     siteName: APP_NAME,
-    title: APP_NAME,
+    title: TITLE,
     description: DESCRIPTION,
   },
 };
