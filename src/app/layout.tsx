@@ -21,14 +21,6 @@ export const metadata: Metadata = {
     default: APP_NAME,
   },
   description: DESCRIPTION,
-  icons: [
-    {
-      rel: "icon",
-      sizes: "32x32",
-      type: "image/png",
-      url: "/asset/image/favicon.png",
-    },
-  ],
   openGraph: {
     type: "website",
     url: "/",
