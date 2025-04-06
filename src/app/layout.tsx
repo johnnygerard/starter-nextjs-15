@@ -1,5 +1,5 @@
 import { Noscript } from "@/component/noscript";
-import { cn } from "@/util/cn";
+import { clsx } from "clsx";
 import type { Metadata } from "next";
 import { Geist } from "next/font/google";
 import "./globals.css";
@@ -38,7 +38,7 @@ type Props = {
 const RootLayout = ({ children }: Props) => {
   return (
     <html
-      className={cn(geistSans.variable, "font-sans antialiased")}
+      className={clsx(geistSans.variable, "font-sans antialiased")}
       lang="en-US"
     >
       <body>
