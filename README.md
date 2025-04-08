@@ -11,8 +11,8 @@ To learn how to use a GitHub template repository, check out [Creating a reposito
 
 ### Frontend
 
-- **React Framework**: [Next.js 15](https://nextjs.org/)
-- **Style**: [Tailwind CSS 4](https://tailwindcss.com/)
+- **React framework**: [Next.js 15](https://nextjs.org/)
+- **Styling**: [Tailwind CSS 4](https://tailwindcss.com/)
 
 ### Backend
 
@@ -35,11 +35,11 @@ npm install --save-exact --save-dev prettier@latest prettier-plugin-tailwindcss@
 
 ## Dev Environment & Tools
 
-- System: [Ubuntu](https://ubuntu.com/desktop)
-- Editor: [WebStorm](https://www.jetbrains.com/webstorm/)
-- Formatter: [Prettier](https://prettier.io/)
-- Linter: [ESLint](https://eslint.org/)
-- AI assistant: [GitHub Copilot](https://github.com/features/copilot)
+- **System**: [Ubuntu](https://ubuntu.com/desktop)
+- **Editor**: [WebStorm](https://www.jetbrains.com/webstorm/)
+- **Formatter**: [Prettier](https://prettier.io/)
+- **Linter**: [ESLint](https://eslint.org/)
+- **AI assistant**: [GitHub Copilot](https://github.com/features/copilot)
 
 ## Copyright
 
