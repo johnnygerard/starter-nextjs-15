@@ -1,4 +1,3 @@
-import { Noscript } from "@/component/noscript";
 import { clsx } from "clsx";
 import type { Metadata } from "next";
 import { Geist } from "next/font/google";
@@ -41,10 +40,7 @@ const RootLayout = ({ children }: Props) => {
       className={clsx(geistSans.variable, "font-sans antialiased")}
       lang="en-US"
     >
-      <body>
-        {children}
-        <Noscript />
-      </body>
+      <body>{children}</body>
     </html>
   );
 };
