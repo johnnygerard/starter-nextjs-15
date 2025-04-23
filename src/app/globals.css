@@ -13,7 +13,9 @@
 }
 
 @media not (update: fast) {
-  @apply !animate-none !transition-none;
+  * {
+    @apply !animate-none !transition-none;
+  }
 }
 
 /*noinspection CssUnresolvedCustomProperty*/
