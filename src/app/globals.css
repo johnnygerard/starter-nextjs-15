@@ -6,12 +6,13 @@
   }
 }
 
-/* Disable all animations when user prefers reduced motion */
-@media (prefers-reduced-motion: reduce) {
+@media screen and (update: fast) and (prefers-reduced-motion: no-preference) {
   :root {
-    @apply !scroll-auto;
+    @apply scroll-smooth;
   }
+}
 
+@media not (update: fast) {
   * {
     @apply !animate-none !transition-none;
   }
