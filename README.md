@@ -16,7 +16,7 @@ To learn how to use a GitHub template repository, check out [Creating a reposito
 
 ### Backend
 
-- **CDN**: Static assets served from [Vercel Edge Network](https://vercel.com/docs/edge-network/overview).
+- **CDN**: [Vercel Edge Network](https://vercel.com/docs/edge-network)
 
 ### Testing
 
